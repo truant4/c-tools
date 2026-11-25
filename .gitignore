@@ -1,6 +1,12 @@
-cat
-touch
-grep
-wc
-*.txt
-mkdir
+# Ignore everything by default...
+*
+
+# ...but still descend into directories
+!*/
+
+# ...and keep source and project files
+!*.c
+!*.h
+!Makefile
+!*.md
+!.gitignore
